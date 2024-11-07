@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Content Analyzer & Organizer</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="book.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#6366f1">
+    <meta name="color-scheme" content="dark">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <header>
+        <h1>Social Media Content Analyzer & Organizer</h1>
+    </header>
+    <main>
+        <section id="overview">
+            <h2>Project Overview</h2>
+            <p>Develop an innovative application that:</p>
+            <ul>
+                <li>Collects share links from YouTube, Instagram, Facebook, and Telegram</li>
+                <li>Analyzes collected content using state-of-the-art, free, and fast AI models</li>
+                <li>Organizes analyzed content into categorized bookmarks</li>
+                <li>Enhances content outlines with additional relevant information</li>
+                <li>Integrates Gemini AI models for advanced conversational insights</li>
+            </ul>
+        </section>
+
+        <section id="goals">
+            <h2>Project Goals</h2>
+            <ul>
+                <li>Improve content discovery and organization for users</li>
+                <li>Provide in-depth content analysis for better understanding</li>
+                <li>Offer a platform for discussion and insight generation using AI</li>
+            </ul>
+        </section>
+
+        <section id="requirements">
+            <h2>Technical Requirements</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Requirement</th>
+                        <th>Suggested Solution</th>
+                        <th>Dependency Versions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Frontend</td>
+                        <td>React Native (for cross-platform)</td>
+                        <td>React Native 0.68</td>
+                    </tr>
+                    <tr>
+                        <td>Backend</td>
+                        <td>Node.js with Express.js</td>
+                        <td>Node.js 16.x, Express 4.17</td>
+                    </tr>
+                    <tr>
+                        <td>Database</td>
+                        <td>MongoDB (for flexible schema)</td>
+                        <td>MongoDB 5.0</td>
+                    </tr>
+                    <tr>
+                        <td>APIs for Social Media</td>
+                        <td>Official APIs for each platform</td>
+                        <td>See API Details below</td>
+                    </tr>
+                    <tr>
+                        <td>AI/ML Models</td>
+                        <td>See below for Free and Fast Models</td>
+                        <td>Model versions in AI/ML Models</td>
+                    </tr>
+                    <tr>
+                        <td>Gemini AI Model</td>
+                        <td>API Integration (Details below)</td>
+                        <td>Gemini AI API v2</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="api-details">
+            <h2>API Details</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Platform</th>
+                        <th>API Type</th>
+                        <th>Authentication</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>YouTube</td>
+                        <td>YouTube Data API v3</td>
+                        <td>OAuth 2.0</td>
+                    </tr>
+                    <tr>
+                        <td>Instagram</td>
+                        <td>Instagram Graph API</td>
+                        <td>Facebook Developer Platform</td>
+                    </tr>
+                    <tr>
+                        <td>Facebook</td>
+                        <td>Facebook Graph API</td>
+                        <td>Facebook Developer Platform</td>
+                    </tr>
+                    <tr>
+                        <td>Telegram</td>
+                        <td>Telegram Bot API</td>
+                        <td>Bot Token</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="ai-models">
+            <h2>Free and Fast Models for Content Analysis</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Model</th>
+                        <th>Use Case</th>
+                        <th>Source</th>
+                        <th>Processing Time (Approx.)</th>
+                        <th>Accuracy</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>NLTK/BERT</td>
+                        <td>Text Analysis (Facebook, Telegram)</td>
+                        <td><a href="https://www.nltk.org/">NLTK</a>, <a href="https://huggingface.co/bert-base-uncased">BERT</a></td>
+                        <td>100ms - 3s</td>
+                        <td>85% - 90%</td>
+                    </tr>
+                    <tr>
+                        <td>OpenCV</td>
+                        <td>Image Analysis (Instagram)</td>
+                        <td><a href="https://opencv.org/">OpenCV</a></td>
+                        <td>500ms - 2s</td>
+                        <td>80% - 85%</td>
+                    </tr>
+                    <tr>
+                        <td>YouTube Data API</td>
+                        <td>Video Metadata Analysis</td>
+                        <td><a href="https://developers.google.com/youtube/v3">Google Developers</a></td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>spaCy</td>
+                        <td>Entity Recognition (All Platforms)</td>
+                        <td><a href="https://spacy.io/">spaCy</a></td>
+                        <td>100ms - 500ms</td>
+                        <td>90% - 95%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="gemini-integration">
+            <h2>Gemini AI Model Integration</h2>
+            <p>Utilize Gemini's <a href="https://www.gemini.ai/conversational-ai">Conversational AI</a> for generating summaries or discussions around the analyzed content.</p>
+            <p>Integration: API Key from Gemini, integrate using backend (Node.js) to process and display enhanced content insights.</p>
+            <p>Processing Time (Approx.): 2s - 5s</p>
+            <p>Output Formats: Text Summary, Conversational Dialogue</p>
+        </section>
+
+        <section id="bookmark-structure">
+            <h2>Bookmark Organization Structure</h2>
+            <ul>
+                <li>Tier 1: Platform (YouTube, Instagram, Facebook, Telegram)</li>
+                <li>Tier 2: Content Type (Video, Image, Text)</li>
+                <li>Tier 3: Category (Automatically tagged using spaCy/NLTK)</li>
+                <li>Tier 4: Content Outline with Summary (Generated using integrated AI models)</li>
+                <li>Tier 5: User Notes and Tags (Optional for personalized organization)</li>
+            </ul>
+        </section>
+
+        <section id="roadmap">
+            <h2>Development Roadmap for a PhD Student</h2>
+            <h3>Week 1-2: Literature Review and Setup</h3>
+            <ul>
+                <li>Conduct a comprehensive literature review on social media content analysis and AI integration.</li>
+                <li>Setup development environment (React Native, Node.js, MongoDB)</li>
+                <li>Integrate official APIs for social media platforms</li>
+                <li>Deliverable: Literature review report and API-connected backend skeleton</li>
+            </ul>
+            <h3>Week 3-4: AI/ML Model Integration</h3>
+            <ul>
+                <li>Implement text, image, and video analysis models</li>
+                <li>Integrate Gemini AI model for conversational insights</li>
+                <li>Deliverable: Functional AI-powered content analysis</li>
+            </ul>
+            <h3>Week 5-6: Frontend Development</h3>
+            <ul>
+                <li>Design and implement the user interface for link sharing and bookmark viewing</li>
+                <li>Deliverable: Basic UI for content input and bookmark display</li>
+            </ul>
+            <h3>Week 7-8: Backend and Database Integration</h3>
+            <ul>
+                <li>Connect frontend to backend for seamless data exchange</li>
+                <li>Ensure database stores and retrieves data efficiently</li>
+                <li>Deliverable: Fully integrated application stack</li>
+            </ul>
+            <h3>Week 9-10: Testing and Deployment</h3>
+            <ul>
+                <li>Perform unit, integration, and UI testing</li>
+                <li>Deploy the application on chosen platforms (Web, Mobile)</li>
+                <li>Deliverable: Deployed application with documentation</li>
+            </ul>
+            <h3>Week 11-12: Research and Publication</h3>
+            <ul>
+                <li>Conduct additional research on the impact and effectiveness of the application</li>
+                <li>Prepare a research paper for publication</li>
+                <li>Deliverable: Research paper submission</li>
+            </ul>
+        </section>
+
+        <section id="api-limits">
+            <h2>Social Media API Limits (Free Tiers)</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Platform</th>
+                        <th>API Limit (Free Tier)</th>
+                        <th>Cost for Excess</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>YouTube Data API</td>
+                        <td>10,000 units/day</td>
+                        <td>$0.005 per unit</td>
+                    </tr>
+                    <tr>
+                        <td>Instagram Graph API</td>
+                        <td>500 requests/hour</td>
+                        <td>Contact for more</td>
+                    </tr>
+                    <tr>
+                        <td>Facebook Graph API</td>
+                        <td>200 requests/hour</td>
+                        <td>Contact for more</td>
+                    </tr>
+                    <tr>
+                        <td>Telegram Bot API</td>
+                        <td>No limits for bots</td>
+                        <td>Free</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="model-comparison">
+            <h2>AI Model Comparison</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Model</th>
+                        <th>Training Data Size</th>
+                        <th>Inference Speed</th>
+                        <th>Accuracy</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>NLTK/BERT</td>
+                        <td>Large (Wikipedia)</td>
+                        <td>Medium (100ms - 3s)</td>
+                        <td>High (85% - 90%)</td>
+                    </tr>
+                    <tr>
+                        <td>OpenCV</td>
+                        <td>Medium (ImageNet)</td>
+                        <td>Fast (500ms - 2s)</td>
+                        <td>Medium (80% - 85%)</td>
+                    </tr>
+                    <tr>
+                        <td>spaCy</td>
+                        <td>Large (Custom)</td>
+                        <td>Fast (100ms - 500ms)</td>
+                        <td>High (90% - 95%)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="project-tracking">
+            <h2>Project Tracking</h2>
+            <p>Status: [IN PROGRESS]</p>
+            <p>Next Task: Conduct literature review and setup development environment</p>
+            <p>Issues:</p>
+            <ul>
+                <li>Investigate API rate limits for high-volume usage</li>
+                <li>Optimize AI model inference for mobile devices</li>
+            </ul>
+            <p>Notes:</p>
+            <ul>
+                <li>Regular team meetings for progress updates</li>
+                <li>Utilize project management tools for task assignment and tracking</li>
+                <li>Maintain a detailed research log for publication purposes</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Social Media Content Analyzer & Organizer. All rights reserved.</p>
+    </footer>
+    <script src="book.js"></script>
+</body>
+</html>
